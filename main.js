@@ -30,7 +30,7 @@ send.addEventListener("click",
    
    //Mostro il biglietto//
    let biglietto = document.getElementById("biglietto");
-   biglietto.classList.remove("hidden");
+   /*biglietto.getElementsByClassName.remove("hidden");*/
 
    //Invio i valori al biglietto//
    document.getElementById("nome").innerHTML = name;
