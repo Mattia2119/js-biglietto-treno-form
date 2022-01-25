@@ -6,14 +6,136 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tickets form</title>
     <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
-    
+
+    <!--SEZIONE CALCOLATORE-->
+    <section class="calculator">
+    <h1 class="uppercase">Calcola il prezzo del tuo biglietto</h1>
+    <div class="container">
+
+    <div class="long-col">
+
+        <div class="col">
+            <div class="sm-col">
+                <p>Nome Cognome</p>
+            </div>
+            <div class="sm-col">
+                <input type="text" name="name" id="name" placeholder="Inserisci il tuo nome">
+            </div>    
+        </div>
+
+        <div class="col">
+            <div class="sm-col">
+                <p>Km da percorrere</p>
+            </div>
+            <div class="sm-col">
+                <input type="number" name="km" id="km" placeholder="Inserisci i Km">
+            </div>    
+        </div>
+
+        <div class="col">
+            <div class="sm-col">
+                <p>Fascia d'età</p>
+            </div>
+            <div class="sm-col">
+                <select name="age" id="age">
+                    <option value="maggiorenne">Maggiorenne</option>
+                    <option value="minorenne">Minorenne</option>
+                    <option value="Over65">Over 65</option>
+                </select>               
+            </div>    
+        </div>
+    </div>
+
+    <div class="long-col">
+        <button id="send">Genera</button>
+        <button id="reset">Annulla</button>
+    </div>
+      
+    </div>
+
+    </section>
+
+    <!--FINE SEZIONE CALCOLATORE-->
+
+    <!--SEZIONE BIGLIETTO-->
+
+    <section class="ticket">
+
+        <h1 class="uppercase">Il tuo biglietto</h1>
+
+        <div id="biglietto" class="container">
+            <h4 class="uppercase">Dettaglio passeggeri</h4>
+
+            <div class="ticket-print">
+
+                <div class="col grey">
+                    <p class="bold uppercase">Nome passeggero</p>
+                    <p id="nome" class="nome bold"></p>
+                </div>
+
+                <div class="col">
+                    <div class="sm-col">
+                        <p class="bold">
+                            Offerta
+                        </p>
+                    </div>
+                    <div class="sm-col">
+                        <p id="offerta">
+                            
+                        </p>
+                    </div>                   
+                </div>
+
+                <div class="col">
+                    <div class="sm-col">
+                        <p class="bold">
+                            Carrozza
+                        </p>
+                    </div>
+                    <div class="sm-col">
+                        <p id="carrozza">
+                            5
+                        </p>
+                    </div>                   
+                </div>
+
+                <div class="col">
+                    <div class="sm-col">
+                        <p class="bold">
+                            Codice CP
+                        </p>
+                    </div>
+                    <div class="sm-col">
+                        <p id="cp">
+                            92911
+                        </p>
+                    </div>                   
+                </div>
+
+                <div class="col">
+                    <div class="sm-col">
+                        <p class="bold">
+                            Costo Biglietto
+                        </p>
+                    </div>
+                    <div class="sm-col">
+                        <p id="prezzo">
+                            
+                        </p>
+                    </div>                   
+                </div>
+
+            </div>
 
 
+        </div>
 
+    </section>
 
-
+    <!--SEZIONE BIGLIETTO-->
 
     <script type="text/javascript" src="main.js"></script>
 </body>

@@ -2,4 +2,138 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-color: purple;
+}
+
+.container {
+    background-color: white;
+    width: 80%;
+    margin: auto;
+    border: 1px solid white;
+    height: 200px;
+}
+
+.sm-col {
+    width: 100%;
+    height: 50%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.col {    
+    width: calc(80%/3);
+    height: 100%; 
+}
+
+.long-col {
+   display: flex;
+   width: 100%;
+   height: 50%;  
+   justify-content: center;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+/*CALCULATOR*/
+
+.calculator .container {
+    border-radius: 10px;
+}
+ 
+.calculator h1{
+  text-align: center;
+  color: white;
+  margin: 20px;
+}
+
+.calculator p {
+    margin: 5px;
+    text-align: center;
+    color: purple;
+}
+
+.calculator input {
+    border-radius: 5px;
+    border: 1px solid purple;
+    height: 28px;
+    width: 200px;
+}
+
+.calculator select {
+    border-radius: 5px;
+    border: 1px solid purple;
+    height: 28px;
+    width: 150px;
+}
+
+button {
+    height: 28px;
+    color: purple;
+    font-weight: bold;
+    width: 100px;
+    align-self: flex-end;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+button:hover {
+  border: 2px solid orange;
+  border-radius: 4px;
+}
+
+/*BIGLIETTO*/
+
+.ticket  h1 {
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+}
+
+#biglietto {
+  /*visibility: hidden;*/
+}
+
+.ticket-print {
+    width: 95%;
+    margin: auto;
+    height: 60%;
+    border-top: 1px solid purple;
+    border-bottom: 1px solid purple;
+    display: flex;
+}
+
+.ticket h4 {
+    margin-top: 19px;
+    margin-left: 30px;
+}
+
+.ticket .col {
+    width: calc(100%/5);
+    padding-left: 20px;
+}
+
+.grey {
+    background-color: grey;
+}
+
+.col.grey {
+    width: 25%;
+    padding: 17px 10px;
+    position: relative;
+}
+
+.ticket .sm-col {
+    display: flex;
+    justify-content: flex-start;
 }
